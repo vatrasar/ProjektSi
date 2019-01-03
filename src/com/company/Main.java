@@ -16,12 +16,18 @@ public class Main {
 
         MajorRepository majorRepository=new MajorRepository();
         QuestionRespository questionRespository=new QuestionRespository();
+        loadData(majorRepository, questionRespository);
+    }
+
+    private static void loadData(MajorRepository majorRepository, QuestionRespository questionRespository) {
         try {
             majorRepository.readData("majors.csv");
+            questionRespository.readData("questions.csv");
         } catch (KeyException e) {
             Logger.getGlobal().warning("Error, bad data in source file."+e.getMessage());
             e.printStackTrace();
         }
+        Logger.getGlobal().info("all data load");
     }
 
 

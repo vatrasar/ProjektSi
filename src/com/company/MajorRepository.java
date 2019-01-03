@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.security.KeyException;
 import java.util.*;
+import java.util.logging.Logger;
 
 public class MajorRepository {
     private Set<Major>majors;
@@ -36,6 +37,7 @@ public class MajorRepository {
         {
             e.printStackTrace();
         }
+        Logger.getGlobal().info("Majors has been load");
     }
 
     /**
@@ -46,27 +48,23 @@ public class MajorRepository {
      * @throws KeyException
      */
     private void readRecords(String[] header, Scanner in, Map<String, String> defaultFeatures) throws KeyException {
-        try {
-            String record=null;
-            while (in.hasNextLine()) {
-                record=in.nextLine();
-                String[] recordContent=record.split(",");// table contents successive fields of record
-                if(recordContent.length==0)
-                {
-                    throw new EOFException();
-                }
-                Major newMajor =new Major(recordContent[0],recordContent[1],new HashMap<>(defaultFeatures));
-                for(int i=2;i<recordContent.length;i++)
-                {
-                   newMajor.setFeatureValue(header[i],recordContent[i]);
-                }
-                this.majors.add(newMajor);
-            }
-        }
-        catch(EOFException eof)
-        {
 
+        String record=null;
+        while (in.hasNextLine()) {
+            record=in.nextLine();
+            String[] recordContent=record.split(",");// table contents successive fields of record
+
+            Major newMajor =new Major(recordContent[0],recordContent[1],new HashMap<>(defaultFeatures));
+            for(int i=2;i<recordContent.length;i++)
+            {
+               newMajor.setFeatureValue(header[i],recordContent[i]);
+            }
+            this.majors.add(newMajor);
         }
+
+
+
+
     }
 
     /**

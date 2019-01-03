@@ -1,0 +1,33 @@
+pytanie,opcja1,opcja2,opcja3,klasa
+Jakiego rodzaju ma być kierunek?,ścisły,humanistyczny,nie wiem,obszarNauk
+Na jakiej uczelni ma być kierunek?,Politechnika Warszawska,Uniwersytet Kardynała Stefana Wyszyńskiego,,uczelnia
+Mogą to być studia,Inżynierskie,Licencjackie,nie wiem,licencjacki 
+Jaki ma być język wykładowy?,angielski,polski,nie wiem,językWykładowy
+Czy chciałbyś programować?,tak,nie,nie wiem,programowanie
+Czy chciałbyś uczyć się elektryki?,tak,nie,nie wiem,elektrycznosc
+Czy chciałbyś uczyć się chemii?,tak,nie,nie wiem,chemia
+Czy chciałbyś uczyć się prawa?,tak,nie,nie wiem,prawo
+Czy chciałbyś pracować w urzędzie?,tak,nie,nie wiem,urzędy
+Czy chciałbyś uczyć się rysować?,tak,nie,nie wiem,rysunek
+Czy chciałbyś uczyć się mechaniki maszyn?,tak,nie,nie wiem,mechanika
+Czy chciałbyś uczyć się biologii?,tak,nie,nie wiem,bilogia
+Czy chciałbyś poszerzać swoją wiedze w zakresie ekologii?,tak,nie,nie wiem,ekologia
+Czy chciałbyś zajmować się energetyką?,tak,nie,nie wiem,energetyka
+Czy chciałbyś uczyć się fizyki?,tak,nie,nie wiem,fizyka
+Czy chciałbyś pracować z mapami?,tak,nie,nie wiem,mapy
+Czy chcesz pracować w przemyśle?,tak,nie,nie wiem,przemysł
+Czy chciałbyś pracować w banku,tak,nie,nie wiem,bank
+Czy chciałbyś zarządzać zasobami ludzkimi?,tak,nie,nie wiem,zarządzanie
+"Czy chciałbyś pracować w slużbach mundurowych, specjalnych?",tak,nie,nie wiem,funMundurowy
+Czy interesują cię badania wykopaliskowe w poszukiwaniu śladów minionych epok?,tak,nie,nie wiem,wykopaliska
+Czy interesujesz się historią?,tak,nie,nie wiem,historia
+Czy chciałabyś/byś pracować w przyszłości jako dzienikarz?,tak,nie,nie wiem,dzienikarstwo
+Czy interesuje cię nauka o językach?,tak,nie,nie wiem,język
+Czy interesuje cię nauka o religii?,tak,nie,nie wiem,religia
+Czy interesjesz sie dziełami sztuki?,tak,nie,nie wiem,dzieloSztuki
+Czy interesujesz się poltyką?,tak,nie,nie wiem,polityka
+Cz interesuja cię badania nad zachowaniem człowieka?,tak,nie,nie wiem,zachowaniaCzlowieka
+Czy interesują cię badana struktur społeczeństwa?,tak,nie,nie wiem,StrSpoleczenstwa
+Czy lubisz pomagać innym osobom?,tak,nie,nie wiem,pomocLudziom
+Czy chciałabyś/byś pracować w przyszłości jako nauczyciel?,tak,nie,nie wiem,nauczyciel
+Czy interesuje cie praca ze starymi dokumentami?,tak,nie,nie wiem,dokumenty
