@@ -17,6 +17,12 @@ public class Main {
         MajorRepository majorRepository=new MajorRepository();
         QuestionRespository questionRespository=new QuestionRespository();
         loadData(majorRepository, questionRespository);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                HelloFrame window= new HelloFrame();
+                window.setVisible(true);
+            }
+        });
     }
 
     private static void loadData(MajorRepository majorRepository, QuestionRespository questionRespository) {
