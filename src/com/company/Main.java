@@ -1,37 +1,28 @@
 package com.company;
 
-import java.io.EOFException;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Scanner;
+
+import java.security.KeyException;
+
+import java.util.logging.Logger;
 
 public class Main {
 
-    public static void main(String[] args) {
-	read_data("plik.csv");
-    }
 
-    private static void read_data(String fileName) {
 
-        ArrayList<String> header=null
-        try(Scanner in=new Scanner(new File(fileName));)
-        {
-            try {
 
-                while (true) {
-                    String headerLine=in.nextLine();
+    public static void main(String[] args)
+    {
 
-                }
-            }
-            catch(EOFException eof)
-            {
 
-            }
-        }
-        catch (FileNotFoundException e)
-        {
+        MajorRepository majorRepository=new MajorRepository();
+        QuestionRespository questionRespository=new QuestionRespository();
+        try {
+            majorRepository.readData("majors.csv");
+        } catch (KeyException e) {
+            Logger.getGlobal().warning("Error, bad data in source file."+e.getMessage());
             e.printStackTrace();
         }
     }
+
+
 }

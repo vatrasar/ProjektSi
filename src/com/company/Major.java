@@ -6,10 +6,10 @@ import java.util.Map;
 public class Major {
 
     private String name,university;
-    private Map<String,Boolean> features;
+    private Map<String,String> features;
 
 
-    public Major(String name, String university, Map<String,Boolean> features){
+    public Major(String name, String university, Map<String,String> features){
 
         this.name = name;
         this.features = features;
@@ -30,16 +30,8 @@ public class Major {
             throw new KeyException("no feature with such name");
 
         }
-        Boolean newValue=null;
-        switch (value)
-        {
-            case "1":
-                newValue=Boolean.TRUE;
-            case "0":
-                newValue=Boolean.FALSE;
 
-        }
-        features.put(featureName,newValue);
+        features.put(featureName,value);
 
     }
 }
