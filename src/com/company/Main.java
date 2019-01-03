@@ -21,7 +21,7 @@ public class Main {
 
                 while (true) {
                     String headerLine=in.nextLine();
-                    header=
+
                 }
             }
             catch(EOFException eof)
