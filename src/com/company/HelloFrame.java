@@ -71,7 +71,11 @@ public class HelloFrame extends javax.swing.JFrame {
     }// </editor-fold>
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+        QuestionFrame newJFrame=new QuestionFrame();
+        
+        newJFrame.setVisible(true);
+        newJFrame.setLocation(this.getLocation());
+        this.dispose();
     }
 
     /**
