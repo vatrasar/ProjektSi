@@ -19,7 +19,7 @@ public class Main {
         loadData(majorRepository, questionRespository);
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                HelloFrame window= new HelloFrame();
+                HelloFrame window= new HelloFrame(questionRespository,majorRepository);
                 window.setVisible(true);
             }
         });
