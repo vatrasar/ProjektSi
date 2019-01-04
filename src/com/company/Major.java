@@ -62,7 +62,7 @@ public class Major {
         {
             System.out.println("ok");
         }
-        boolean result= features.get(featureName).equals(featureValue);
+        boolean result=features.get(featureName).equals(featureValue);
         return result;
     }
 

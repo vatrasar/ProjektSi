@@ -1,6 +1,4 @@
 package com.company;
-
-import java.io.EOFException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.security.KeyException;

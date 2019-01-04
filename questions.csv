@@ -2,15 +2,15 @@ pytanie,opcja1,opcja2,opcja3,klasa
 Jakiego rodzaju może być kierunek?,ścisły,humanistyczny,oba mogą być,obszarNauk
 Na jakiej uczelni ma być kierunek?,Politechnika Warszawska,Uniwersytet Kardynała Stefana Wyszyńskiego,oba mogą być,uczelnia
 Mogą to być studia,Inżynierskie,Licencjackie,oba mogą być,licencjacki 
-Jaki ma być język wykładowy?,angielski,polski,oba mogą być,językWykładowy
+Jaki ma być język wykładowy?,angielski,polski,oba mogą być,jezykWykladowy
 Czy chciałbyś programować?,tak,nie,nie wiem,programowanie
 Czy chciałbyś uczyć się elektryki?,tak,nie,nie wiem,elektrycznosc
 Czy chciałbyś uczyć się chemii?,tak,nie,nie wiem,chemia
 Czy chciałbyś uczyć się prawa?,tak,nie,nie wiem,prawo
-Czy chciałbyś pracować w urzędzie?,tak,nie,nie wiem,urzędy
+Czy chciałbyś pracować w urzędzie?,tak,nie,nie wiem,urzedy
 Czy chciałbyś uczyć się rysować?,tak,nie,nie wiem,rysunek
-Czy chciałbyś uczyć się mechaniki maszyn?,tak,nie,nie wiem,mechanika
-Czy chciałbyś uczyć się biologii?,tak,nie,nie wiem,bilogia
+Czy chciałbyś uczyć się mechaniki maszyn?,tak,nie,nie wiem,mechanikaMaszyn
+Czy chciałbyś uczyć się biologii?,tak,nie,nie wiem,biologia
 Czy chciałbyś poszerzać swoją wiedze w zakresie ekologii?,tak,nie,nie wiem,ekologia
 Czy chciałbyś zajmować się energetyką?,tak,nie,nie wiem,energetyka
 Czy chciałbyś uczyć się fizyki?,tak,nie,nie wiem,fizyka
@@ -18,7 +18,7 @@ Czy chciałbyś pracować z mapami?,tak,nie,nie wiem,mapy
 Czy chcesz pracować w przemyśle?,tak,nie,nie wiem,przemysł
 Czy chciałbyś pracować w banku,tak,nie,nie wiem,bank
 Czy chciałbyś zarządzać zasobami ludzkimi?,tak,nie,nie wiem,zarządzanie
-"Czy chciałbyś pracować w slużbach mundurowych, specjalnych?",tak,nie,nie wiem,funMundurowy
+Czy chciałbyś pracować w służbach mundurowych lub specjalnych?,tak,nie,nie wiem,funMundurowy
 Czy interesują cię badania wykopaliskowe w poszukiwaniu śladów minionych epok?,tak,nie,nie wiem,wykopaliska
 Czy interesujesz się historią?,tak,nie,nie wiem,historia
 Czy chciałabyś/byś pracować w przyszłości jako dzienikarz?,tak,nie,nie wiem,dzienikarstwo
