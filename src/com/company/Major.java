@@ -71,4 +71,8 @@ public class Major {
 
         weight++;
     }
+    public void disableMajor()
+    {
+        active=false;
+    }
 }

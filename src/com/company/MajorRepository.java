@@ -84,10 +84,14 @@ public class MajorRepository {
     }
 
     public void riseWeightWhereFeature(final String featureName,final String featureValue) {
-        final String translatedFeatureValue=translateFeatureValue(featureValue);
-        List<Major>majorsToRise=majors.stream().filter(a->a.hasFeature(featureName,translatedFeatureValue)).collect(Collectors.toList());
+        List<Major> majorsToRise = getMajorsWhereFeature(featureName, featureValue);
         majorsToRise.forEach(Major::riseWeight);
 
+    }
+
+    private List<Major> getMajorsWhereFeature(String featureName, String featureValue) {
+        final String translatedFeatureValue = translateFeatureValue(featureValue);
+        return majors.stream().filter(a -> a.hasFeature(featureName, translatedFeatureValue)).collect(Collectors.toList());
     }
 
     private String translateFeatureValue(String featureValue) {
@@ -100,5 +104,23 @@ public class MajorRepository {
                 return "0";
         }
         return featureValue;
+    }
+
+    public void disableWhereFeature(String featureName, String featureValue) {
+        List<Major> majorsToDisable = getMajorsWhereFeature(featureName, featureValue);
+        majorsToDisable.forEach(Major::disableMajor);
+    }
+
+    /**
+     *disable majors with fatureValue and rise Weight majros with featureValue2
+     * @param featureName
+     * @param featureValue
+     * @param featureValue2
+     */
+    public void switchFeatures(String featureName, String featureValue,String featureValue2) {
+        List<Major> majorsToDisable = getMajorsWhereFeature(featureName,featureValue);
+        List<Major> majorsToRise =getMajorsWhereFeature(featureName,featureValue2);
+        majorsToDisable.forEach(Major::disableMajor);
+        majorsToRise.forEach(Major::riseWeight);
     }
 }

@@ -98,11 +98,20 @@ public class QuestionFrame extends javax.swing.JFrame {
     }// </editor-fold>
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        majorRepository.riseWeightWhereFeature(actualQuestion.feature,actualQuestion.answer[0]);
+        if(actualQuestion.answer[0].equals("tak"))
+            majorRepository.riseWeightWhereFeature(actualQuestion.feature,actualQuestion.answer[0]);
+        else
+            majorRepository.switchFeatures(actualQuestion.feature,actualQuestion.answer[1],actualQuestion.answer[0]);
         updateQuestion();
     }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+
+        if(actualQuestion.answer[0].equals("nie"))
+            majorRepository.disableWhereFeature(actualQuestion.feature,actualQuestion.answer[0]);
+        else
+            majorRepository.switchFeatures(actualQuestion.feature,actualQuestion.answer[1],actualQuestion.answer[0]);
+
         updateQuestion();
     }
 

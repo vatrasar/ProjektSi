@@ -9,10 +9,12 @@ import java.util.logging.Logger;
 
 public class QuestionRespository{
     private ArrayList<Question> questions;
+    private MajorRepository majorRepository;
 
-    public QuestionRespository()
+    public QuestionRespository(MajorRepository majorRepository)
     {
         questions =new ArrayList<>();
+        this.majorRepository=majorRepository;
     }
 
     /**

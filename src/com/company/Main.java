@@ -15,7 +15,7 @@ public class Main {
 
 
         MajorRepository majorRepository=new MajorRepository();
-        QuestionRespository questionRespository=new QuestionRespository();
+        QuestionRespository questionRespository=new QuestionRespository(majorRepository);
         loadData(majorRepository, questionRespository);
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
