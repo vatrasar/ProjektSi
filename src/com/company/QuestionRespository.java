@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.security.KeyException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
@@ -105,8 +107,38 @@ public class QuestionRespository{
         {
             return null;
         }
-        Question result=questions.get(0);
-        questions.remove(0);
-        return result;
+        Map<Question,Integer>questionsRating=getQuestionsRating();
+        if(questionsRating.isEmpty())
+        {
+            return null;
+        }
+        Question bestQuestion=questions.get(0);
+        int bestRaiting=-1;
+        for(Map.Entry<Question,Integer>raiting:questionsRating.entrySet())
+        {
+            if(bestRaiting<raiting.getValue())
+            {
+                bestQuestion=raiting.getKey();
+                bestRaiting=raiting.getValue();
+            }
+        }
+
+        questions.remove(bestQuestion);
+        return bestQuestion;
+    }
+    public Map<Question,Integer> getQuestionsRating()
+    {
+        Map<Question,Integer>questionsRating=new HashMap<>();
+        
+        for(Major major:majorRepository.getMajors()) {
+
+            for (Question question : questions) {
+                String answer=majorRepository.translateFeatureValue(question.answer[0]);
+                if (major.hasFeature(question.feature, answer) && major.active)
+                    questionsRating.put(question, questionsRating.getOrDefault(question, 0) + 1);
+            }
+        }
+
+        return questionsRating;
     }
 }

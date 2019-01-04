@@ -14,6 +14,10 @@ public class MajorRepository {
         majors=new HashSet<>();
     }
 
+    public Set<Major> getMajors() {
+        return majors;
+    }
+
     /**
      * Method read majors from file with name fileName and then save it to majors pole
      * @param fileName
@@ -94,7 +98,7 @@ public class MajorRepository {
         return majors.stream().filter(a -> a.hasFeature(featureName, translatedFeatureValue)).collect(Collectors.toList());
     }
 
-    private String translateFeatureValue(String featureValue) {
+    public String translateFeatureValue(String featureValue) {
 
         switch (featureValue)
         {
