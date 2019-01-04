@@ -1,13 +1,18 @@
 package com.company;
 
+import sun.rmi.runtime.Log;
+
 import java.security.KeyException;
 import java.util.Map;
 import java.util.Objects;
+import java.util.logging.Logger;
 
 public class Major {
 
     private String name,university;
     private Map<String,String> features;
+    private int weight;
+    boolean active;
 
     @Override
     public boolean equals(Object o) {
@@ -29,6 +34,8 @@ public class Major {
         this.name = name;
         this.features = features;
         this.university=university;
+        this.weight=0;
+        this.active=true;
     }
 
     public String getName() {
@@ -48,5 +55,20 @@ public class Major {
 
         features.put(featureName,value);
 
+    }
+
+    public boolean hasFeature(String featureName, String featureValue) {
+        if(name.equals("informatyka") || name.equals("Informatyka"))
+        {
+            System.out.println("ok");
+        }
+        boolean result= features.get(featureName).equals(featureValue);
+        return result;
+    }
+
+    public void riseWeight() {
+        Logger.getGlobal().info("rise "+name);
+
+        weight++;
     }
 }

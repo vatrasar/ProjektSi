@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.security.KeyException;
 import java.util.*;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 public class MajorRepository {
     private Set<Major>majors;
@@ -55,7 +56,7 @@ public class MajorRepository {
             String[] recordContent=record.split(",");// table contents successive fields of record
 
             Major newMajor =new Major(recordContent[0],recordContent[1],new HashMap<>(defaultFeatures));
-            for(int i=2;i<recordContent.length;i++)
+            for(int i=1;i<recordContent.length;i++)
             {
                newMajor.setFeatureValue(header[i],recordContent[i]);
             }
@@ -84,4 +85,22 @@ public class MajorRepository {
         }
     }
 
+    public void riseWeightWhereFeature(final String featureName,final String featureValue) {
+        final String translatedFeatureValue=translateFeatureValue(featureValue);
+        List<Major>majorsToRise=majors.stream().filter(a->a.hasFeature(featureName,translatedFeatureValue)).collect(Collectors.toList());
+        majorsToRise.forEach(Major::riseWeight);
+
+    }
+
+    private String translateFeatureValue(String featureValue) {
+
+        switch (featureValue)
+        {
+            case "tak":
+                return "1";
+            case "nie":
+                return "0";
+        }
+        return featureValue;
+    }
 }

@@ -1,12 +1,9 @@
 package com.company;
 
-import java.io.EOFException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.security.KeyException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
@@ -25,7 +22,7 @@ public class QuestionRespository{
      */
     public void readData(String fileName)throws KeyException {
 
-        String[]header=null;
+
 
         try(Scanner in=new Scanner(new File(fileName));)
         {
@@ -49,6 +46,10 @@ public class QuestionRespository{
 
     }
 
+    /**
+     * line in question has max 34 characters. Moreover first line has exact 34 characters
+     * @param question
+     */
     private void normalizeQuestions(Question question)
     {
         StringBuilder questionBulider=new StringBuilder(question.question);
@@ -98,6 +99,10 @@ public class QuestionRespository{
     }
 
     public Question getNextQuestion() {
+        if(questions.isEmpty())
+        {
+            return null;
+        }
         Question result=questions.get(0);
         questions.remove(0);
         return result;

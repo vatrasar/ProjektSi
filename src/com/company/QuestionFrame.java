@@ -6,6 +6,8 @@
 
 package com.company;
 
+import java.util.logging.Logger;
+
 /**
  *
  * @author szymon
@@ -96,6 +98,7 @@ public class QuestionFrame extends javax.swing.JFrame {
     }// </editor-fold>
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        majorRepository.riseWeightWhereFeature(actualQuestion.feature,actualQuestion.answer[0]);
         updateQuestion();
     }
 
@@ -110,11 +113,15 @@ public class QuestionFrame extends javax.swing.JFrame {
 
     private void updateQuestion()
     {
-        Question question=questionRespository.getNextQuestion();
-        jLabel1.setText(question.question);
-        jButton1.setText(question.answer[0]);
-        jButton2.setText(question.answer[1]);
-        jButton3.setText(question.answer[2]);
+        actualQuestion=questionRespository.getNextQuestion();
+        if(actualQuestion==null)
+        {
+            Logger.getGlobal().info("simulation end");
+        }
+        jLabel1.setText(actualQuestion.question);
+        jButton1.setText(actualQuestion.answer[0]);
+        jButton2.setText(actualQuestion.answer[1]);
+        jButton3.setText(actualQuestion.answer[2]);
         questionNumber++;
         this.setTitle("Pytanie "+questionNumber);
         this.setVisible(true);
@@ -126,6 +133,7 @@ public class QuestionFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JTextArea jLabel1;
     int questionNumber;
+    Question actualQuestion;
     MajorRepository majorRepository;
     QuestionRespository questionRespository;
     // End of variables declaration
