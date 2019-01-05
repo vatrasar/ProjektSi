@@ -1,4 +1,4 @@
-kierunek,uczelnia,obszarNauk,inżynierski,licencjacki ,jezykWykladowy,elektrycznosc,chemia,programowanie,prawo,rysunek,urzedy,budowy,mechanikaMaszyn,biologia,ekologia,energetyka,fizyka,mapy,przemysł,bank,zarządzanie,funMundurowy,historia,wykopaliska,dzienikarstwo,język,religia,dzieloSztuki,polityka,zachowaniaCzlowieka,StrSpoleczenstwa,pomocLudziom,nauczyciel,dokumenty
+kierunek,uczelnia,obszarNauk,inżynierski,licencjacki,jezykWykladowy,elektrycznosc,chemia,programowanie,prawo,rysunek,urzedy,budowy,mechanikaMaszyn,biologia,ekologia,energetyka,fizyka,mapy,przemysł,bank,zarządzanie,funMundurowy,historia,wykopaliska,dzienikarstwo,język,religia,dzieloSztuki,polityka,zachowaniaCzlowieka,StrSpoleczenstwa,pomocLudziom,nauczyciel,dokumenty
 administracja,Politechnika Warszawska,ekonomiczny,0,1,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,1
 architektura ,Politechnika Warszawska,ścisły,1,0,polski,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0
 automatyka i robotyka,Politechnika Warszawska,ścisły,1,0,polski,1,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -20,7 +20,7 @@ inżynieria i analiza danych,Politechnika Warszawska,ścisły,1,0,polski,0,0,1,0
 inżynieria materiałowa,Politechnika Warszawska,ścisły,1,0,polski,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 inżynieria pojazdów elektrycznych i hybrydowych,Politechnika Warszawska,ścisły,1,0,polski,1,0,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 inżynieria środowiska,Politechnika Warszawska,ścisły,1,0,polski,0,1,0,0,1,1,1,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-lotnictwo i kosmonautyka,Politechnika Warszawska,ścisły,1,0,polski,1,0,0,0,1,1,0,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+lotnictwo i kosmonautyka,Politechnika Warszawska,ścisły,1,0,polski,0,0,1,0,1,0,0,1,0,0,0,1,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0
 matematyka ,Politechnika Warszawska,ścisły,1,0,polski,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0
 mechanika i budowa maszyn,Politechnika Warszawska,ścisły,1,0,polski,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 mechatronika,Politechnika Warszawska,ścisły,1,0,polski,1,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -32,38 +32,38 @@ transport ,Politechnika Warszawska,ścisły,1,0,polski,0,0,0,0,0,1,0,0,0,0,0,0,1
 zarządzanie,Politechnika Warszawska,ekonomiczny,1,1,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,1
 inżynieria zarządzania,Politechnika Warszawska,ekonomiczny,1,1,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0
 zarządzanie i inżynieria produkcji,Politechnika Warszawska,ścisły,1,0,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,1
-aerospace engineering,Politechnika Warszawska,ścisły,1,0,angielski,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0
-computer science,Politechnika Warszawska,ścisły,1,0,angielski,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0
-civil engineering,Politechnika Warszawska,ścisły,1,0,angielski,0,1,0,0,1,1,1,0,0,0,0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0
-Administracja,UKSW,,0,1,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-Archeologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1
-Archiwistyka i zarządzanie dokumentacją,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
-Bezpieczeństwo wewnętrzne,UKSW,humanistyczny,0,1,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1
-Biologia,UKSW,ścisły,0,1,polski,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
-Chemia,UKSW,ścisły,0,1,polski,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
-Człowiek w cyberprzestrzeni,UKSW,,0,1,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Dzienikarstwo i komunikacja społeczna,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0
-Ekonomia,UKSW,ekonomiczny,0,1,polski,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-Europejstyka,UKSW,humanistyczny,0,1,polski,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
-Filologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0
-Filozofia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
-Fizyka,UKSW,ścisły,0,1,polski,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-Historia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1
-Historia sztuki,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1
-Informatyka,UKSW,ścisły,0,1,polski,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Inżynieria środowiska,UKSW,ścisły,1,0,polski,0,1,0,0,1,1,1,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Kulturoznawstwo,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1
-Matematyka,UKSW,ścisły,0,1,polski,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-Muzeologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1
-Nauka o rodzinie,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0
-Ochrona dóbr kultury i środowiska,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1
-Ochrona środowiska,UKSW,ścisły,0,1,polski,0,1,0,0,0,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Pedagogika,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
-Politologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
-Praca socjalna,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0
-Prawo,UKSW,humanistyczny,0,1,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0
-Prawo kanoniczne,UKSW,humanistyczny,0,1,polski,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0
-Psychologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
-Socjologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
-Teologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0
-Zarządzanie dziedzictwem kultrowym,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1
+aerospace engineering,Politechnika Warszawska,ścisły,1,0,angielski,0,0,1,0,1,0,0,1,0,0,0,1,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+computer science,Politechnika Warszawska,ścisły,1,0,angielski,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+civil engineering,Politechnika Warszawska,ścisły,1,0,angielski,0,1,0,0,1,1,1,0,0,0,0,1,0,2,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0
+Administracja,UKSW,humanistyczny,0,1,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,3,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+Archeologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1
+Archiwistyka i zarządzanie dokumentacją,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+Bezpieczeństwo wewnętrzne,UKSW,humanistyczny,0,1,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,6,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1
+Biologia,UKSW,ścisły,0,1,polski,0,1,0,0,0,0,0,0,1,1,0,0,0,7,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Chemia,UKSW,ścisły,0,1,polski,0,1,0,0,0,0,0,0,0,1,0,0,0,8,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
+Człowiek w cyberprzestrzeni,UKSW,humanistyczny,0,1,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,9,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Dzienikarstwo i komunikacja społeczna,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,1,0,0,0,0,0,0,0,10,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+Ekonomia,UKSW,ekonomiczny,0,1,polski,0,0,0,0,0,1,0,0,0,0,0,0,0,11,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Europejstyka,UKSW,humanistyczny,0,1,polski,0,0,0,1,0,0,0,0,0,0,0,0,0,12,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+Filologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,13,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+Filozofia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,14,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+Fizyka,UKSW,ścisły,0,1,polski,1,0,0,0,0,0,0,0,0,0,1,1,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Historia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1
+Historia sztuki,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,1,0,0,0,0,0,0,17,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1
+Informatyka,UKSW,ścisły,0,1,polski,1,0,1,0,0,1,0,0,0,0,0,0,0,18,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Inżynieria środowiska,UKSW,ścisły,1,0,polski,0,1,0,0,1,1,1,0,1,1,1,1,0,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Kulturoznawstwo,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1
+Matematyka,UKSW,ścisły,0,1,polski,0,0,1,0,0,0,0,0,0,0,0,0,0,21,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Muzeologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,22,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1
+Nauka o rodzinie,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0
+Ochrona dóbr kultury i środowiska,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,24,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1
+Ochrona środowiska,UKSW,ścisły,0,1,polski,0,1,0,0,0,1,1,0,1,1,1,1,1,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pedagogika,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+Politologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,27,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+Praca socjalna,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,1,0,0,0,0,0,0,0,28,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0
+Prawo,UKSW,humanistyczny,0,1,polski,0,0,0,1,0,1,0,0,0,0,0,0,0,29,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+Prawo kanoniczne,UKSW,humanistyczny,0,1,polski,0,0,0,1,0,0,0,0,0,0,0,0,0,30,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0
+Psychologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,31,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0
+Socjologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,32,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Teologia,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,0,0,0,0,0,0,0,0,33,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0
+Zarządzanie dziedzictwem kultrowym,UKSW,humanistyczny,0,1,polski,0,0,0,0,0,1,0,0,0,0,0,0,0,34,0,0,0,1,0,0,0,0,1,0,0,0,0,0,1

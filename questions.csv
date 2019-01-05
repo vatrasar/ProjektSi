@@ -1,7 +1,7 @@
 pytanie,opcja1,opcja2,opcja3,klasa
 Jakiego rodzaju może być kierunek?,ścisły,humanistyczny,oba mogą być,obszarNauk
-Na jakiej uczelni ma być kierunek?,Politechnika Warszawska,Uniwersytet Kardynała Stefana Wyszyńskiego,oba mogą być,uczelnia
-Mogą to być studia,Inżynierskie,Licencjackie,oba mogą być,licencjacki 
+Na jakiej uczelni ma być kierunek?,Politechnika Warszawska,UKSW,oba mogą być,uczelnia
+Mogą to być studia,Inżynierskie,Licencjackie,oba mogą być,licencjacki
 Jaki ma być język wykładowy?,angielski,polski,oba mogą być,jezykWykladowy
 Czy chciałbyś programować?,tak,nie,nie wiem,programowanie
 Czy chciałbyś uczyć się elektryki?,tak,nie,nie wiem,elektrycznosc

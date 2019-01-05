@@ -6,6 +6,10 @@
 
 package com.company;
 
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import java.util.List;
+import java.util.Vector;
 import java.util.logging.Logger;
 
 /**
@@ -107,7 +111,7 @@ public class QuestionFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
 
-        if(actualQuestion.answer[0].equals("nie"))
+        if(actualQuestion.answer[0].equals("tak"))
             majorRepository.disableWhereFeature(actualQuestion.feature,actualQuestion.answer[0]);
         else
             majorRepository.switchFeatures(actualQuestion.feature,actualQuestion.answer[1],actualQuestion.answer[0]);
@@ -125,7 +129,8 @@ public class QuestionFrame extends javax.swing.JFrame {
         actualQuestion=questionRespository.getNextQuestion();
         if(actualQuestion==null)
         {
-            Logger.getGlobal().info("simulation end");
+            presentResults();
+            return;
         }
         jLabel1.setText(actualQuestion.question);
         jButton1.setText(actualQuestion.answer[0]);
@@ -136,6 +141,38 @@ public class QuestionFrame extends javax.swing.JFrame {
         this.setVisible(true);
     }
 
+    private void presentResults() {
+        List<Major>results=majorRepository.getResults();
+        ResultFrame resultFrame=new ResultFrame();
+        setTable(results,resultFrame);
+        resultFrame.setVisible(true);
+        resultFrame.setLocation(this.getLocation());
+        this.dispose();
+    }
+
+    private void setTable(List<Major> resultList, ResultFrame newJFrame) {
+
+        JTable table =newJFrame.getjTable1();
+        DefaultTableModel model =(DefaultTableModel)table.getModel();
+
+        for(Major record:resultList)
+        {
+            Vector vector=new Vector();
+            vector.add(record.getName());
+            vector.add(record.getUniversity());
+
+            if(record.getFeatureValue("licencjacki").equals("1"))
+                vector.add(record.getFeatureValue("licencjackie"));
+            else
+                vector.add(record.getFeatureValue("inżynierskie"));
+            if(record.getFeatureValue("jezykWykladowy").equals("angielski"))
+                vector.add(record.getFeatureValue("Angielski"));
+            else
+                vector.add(record.getFeatureValue("Polski"));
+            model.addRow(vector);
+
+        }
+    }
     // Variables declaration - do not modify
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

@@ -7,12 +7,24 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.logging.Logger;
 
-public class Major {
+public class Major implements Comparable<Major>{
 
     private String name,university;
     private Map<String,String> features;
     private int weight;
     boolean active;
+
+    @Override
+    public int compareTo(Major o) {
+        if(weight>o.weight)
+            return 1;
+        if(weight==o.weight)
+        {
+            return 0;
+        }
+        else
+            return -1;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -38,10 +50,17 @@ public class Major {
         this.active=true;
     }
 
+    public boolean isActive() {
+        return active;
+    }
+
     public String getName() {
         return name;
     }
-
+    public String getFeatureValue(String featureName)
+    {
+        return features.get(featureName);
+    }
     public String getUniversity() {
         return university;
     }
@@ -58,21 +77,21 @@ public class Major {
     }
 
     public boolean hasFeature(String featureName, String featureValue) {
-        if(name.equals("informatyka") || name.equals("Informatyka"))
-        {
-            System.out.println("ok");
-        }
+
         boolean result=features.get(featureName).equals(featureValue);
         return result;
     }
 
     public void riseWeight() {
-        Logger.getGlobal().info("rise "+name);
+        if(active)
+            Logger.getGlobal().info("rise "+name);
 
         weight++;
     }
     public void disableMajor()
     {
+        if(active)
+            Logger.getGlobal().info("disable "+name);
         active=false;
     }
 }

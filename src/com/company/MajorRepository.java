@@ -113,6 +113,7 @@ public class MajorRepository {
     public void disableWhereFeature(String featureName, String featureValue) {
         List<Major> majorsToDisable = getMajorsWhereFeature(featureName, featureValue);
         majorsToDisable.forEach(Major::disableMajor);
+
     }
 
     /**
@@ -126,5 +127,12 @@ public class MajorRepository {
         List<Major> majorsToRise =getMajorsWhereFeature(featureName,featureValue2);
         majorsToDisable.forEach(Major::disableMajor);
         majorsToRise.forEach(Major::riseWeight);
+    }
+
+    public List<Major> getResults() {
+
+        List<Major>results=majors.stream().filter(Major::isActive).collect(Collectors.toList());
+        Collections.sort(results);
+        return results;
     }
 }
