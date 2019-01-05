@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class MajorRepository {
     private Set<Major>majors;
-
+    private String source;
     public MajorRepository() {
 
         majors=new HashSet<>();
@@ -26,7 +26,7 @@ public class MajorRepository {
     public void readData(String fileName)throws KeyException {
 
         String[]header=null;
-
+        source=fileName;
         try(Scanner in=new Scanner(new File(fileName));)
         {
 
@@ -134,5 +134,15 @@ public class MajorRepository {
         List<Major>results=majors.stream().filter(Major::isActive).collect(Collectors.toList());
         Collections.sort(results);
         return results;
+    }
+
+    public void restart() {
+        majors=new HashSet<>();
+        try {
+            readData(source);
+        } catch (KeyException e) {
+            Logger.getGlobal().warning("bad data!");
+            e.printStackTrace();
+        }
     }
 }

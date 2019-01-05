@@ -3,16 +3,13 @@ package com.company;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.security.KeyException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 import java.util.logging.Logger;
 
 public class QuestionRespository{
     private ArrayList<Question> questions;
     private MajorRepository majorRepository;
-
+    private String source;
     public QuestionRespository(MajorRepository majorRepository)
     {
         questions =new ArrayList<>();
@@ -27,7 +24,7 @@ public class QuestionRespository{
     public void readData(String fileName)throws KeyException {
 
 
-
+        source=fileName;
         try(Scanner in=new Scanner(new File(fileName));)
         {
             in.nextLine(); //skip header
@@ -140,5 +137,15 @@ public class QuestionRespository{
         }
 
         return questionsRating;
+    }
+
+    public void restart() {
+        questions=new ArrayList<>();
+        try {
+            readData(source);
+        } catch (KeyException e) {
+            Logger.getGlobal().warning("bad data!");
+            e.printStackTrace();
+        }
     }
 }

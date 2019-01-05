@@ -18,7 +18,8 @@ public class ResultFrame extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
-    public ResultFrame() {
+    public ResultFrame(QuestionFrame questionFrame) {
+        this.questionFrame=questionFrame;
         initComponents();
     }
 
@@ -67,7 +68,7 @@ public class ResultFrame extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jButton1.setText("Wróć");
+        jButton1.setText("Jeszcze raz");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -147,7 +148,9 @@ public class ResultFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+        questionFrame.restart();
+        questionFrame.setVisible(true);
+        this.dispose();
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -169,5 +172,6 @@ public class ResultFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private QuestionFrame questionFrame;
     // End of variables declaration//GEN-END:variables
 }

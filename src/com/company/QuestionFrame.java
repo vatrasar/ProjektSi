@@ -114,7 +114,7 @@ public class QuestionFrame extends javax.swing.JFrame {
         if(actualQuestion.answer[0].equals("tak"))
             majorRepository.disableWhereFeature(actualQuestion.feature,actualQuestion.answer[0]);
         else
-            majorRepository.switchFeatures(actualQuestion.feature,actualQuestion.answer[1],actualQuestion.answer[0]);
+            majorRepository.switchFeatures(actualQuestion.feature,actualQuestion.answer[0],actualQuestion.answer[1]);
 
         updateQuestion();
     }
@@ -143,7 +143,7 @@ public class QuestionFrame extends javax.swing.JFrame {
 
     private void presentResults() {
         List<Major>results=majorRepository.getResults();
-        ResultFrame resultFrame=new ResultFrame();
+        ResultFrame resultFrame=new ResultFrame(this);
         setTable(results,resultFrame);
         resultFrame.setVisible(true);
         resultFrame.setLocation(this.getLocation());
@@ -162,13 +162,13 @@ public class QuestionFrame extends javax.swing.JFrame {
             vector.add(record.getUniversity());
 
             if(record.getFeatureValue("licencjacki").equals("1"))
-                vector.add(record.getFeatureValue("licencjackie"));
+                vector.add("licencjackie");
             else
-                vector.add(record.getFeatureValue("inżynierskie"));
+                vector.add("inżynierskie");
             if(record.getFeatureValue("jezykWykladowy").equals("angielski"))
-                vector.add(record.getFeatureValue("Angielski"));
+                vector.add("Angielski");
             else
-                vector.add(record.getFeatureValue("Polski"));
+                vector.add("Polski");
             model.addRow(vector);
 
         }
@@ -182,6 +182,14 @@ public class QuestionFrame extends javax.swing.JFrame {
     Question actualQuestion;
     MajorRepository majorRepository;
     QuestionRespository questionRespository;
+
+    public void restart() {
+        majorRepository.restart();
+        questionRespository.restart();
+        questionNumber=0;
+        updateQuestion();
+
+    }
     // End of variables declaration
 
 }
