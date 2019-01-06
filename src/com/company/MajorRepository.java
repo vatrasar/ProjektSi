@@ -112,7 +112,7 @@ public class MajorRepository {
 
     public void disableWhereFeature(String featureName, String featureValue) {
         List<Major> majorsToDisable = getMajorsWhereFeature(featureName, featureValue);
-        majorsToDisable.forEach(Major::disableMajor);
+        majorsToDisable.forEach(a->a.disableMajor(featureName));
 
     }
 
@@ -122,10 +122,10 @@ public class MajorRepository {
      * @param featureValue
      * @param featureValue2
      */
-    public void switchFeatures(String featureName, String featureValue,String featureValue2) {
+    public void switchFeatures(final String featureName, String featureValue,String featureValue2) {
         List<Major> majorsToDisable = getMajorsWhereFeature(featureName,featureValue);
         List<Major> majorsToRise =getMajorsWhereFeature(featureName,featureValue2);
-        majorsToDisable.forEach(Major::disableMajor);
+        majorsToDisable.forEach(a->a.disableMajor(featureName));
         majorsToRise.forEach(Major::riseWeight);
     }
 

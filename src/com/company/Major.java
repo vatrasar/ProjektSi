@@ -77,8 +77,15 @@ public class Major implements Comparable<Major>{
     }
 
     public boolean hasFeature(String featureName, String featureValue) {
+        String featureResultValue=features.get(featureName);
+        boolean result=true;
 
-        boolean result=features.get(featureName).equals(featureValue);
+        if(featureValue.equals("1"))
+        {
+            result=featureResultValue.equals("1") || featureResultValue.equals("2");
+        }
+        else
+            result=features.get(featureName).equals(featureValue);
         return result;
     }
 
@@ -88,10 +95,15 @@ public class Major implements Comparable<Major>{
 
         weight++;
     }
-    public void disableMajor()
+    public void disableMajor(String featureName)
     {
-        if(active)
-            Logger.getGlobal().info("disable "+name);
-        active=false;
+        if(features.get(featureName).equals("2"))
+            return;
+        else {
+            if(active)
+                Logger.getGlobal().info("disable "+name);
+            active=false;
+        }
+
     }
 }
