@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package com.company;
 
@@ -101,6 +97,10 @@ public class QuestionFrame extends javax.swing.JFrame {
         this.setTitle("Pytanie "+questionNumber);
     }// </editor-fold>
 
+    /**
+     * usually it is "Yes" button
+     * @param evt
+     */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         if(actualQuestion.answer[0].equals("tak"))
             majorRepository.riseWeightWhereFeature(actualQuestion.feature,actualQuestion.answer[0]);
@@ -109,6 +109,10 @@ public class QuestionFrame extends javax.swing.JFrame {
         updateQuestion();
     }
 
+    /**
+     * usually it is "no" button
+     * @param evt
+     */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
 
         if(actualQuestion.answer[0].equals("tak"))
@@ -119,6 +123,10 @@ public class QuestionFrame extends javax.swing.JFrame {
         updateQuestion();
     }
 
+    /**
+     * always it is "I don't know button
+     * @param evt
+     */
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
         updateQuestion();
     }
@@ -139,6 +147,7 @@ public class QuestionFrame extends javax.swing.JFrame {
         questionNumber++;
         this.setTitle("Pytanie "+questionNumber);
         this.setVisible(true);
+        Logger.getGlobal().info("Question:"+actualQuestion.question);
     }
 
     private void presentResults() {
@@ -152,8 +161,9 @@ public class QuestionFrame extends javax.swing.JFrame {
 
     private void setTable(List<Major> resultList, ResultFrame newJFrame) {
 
-        JTable table =newJFrame.getjTable1();
-        DefaultTableModel model =(DefaultTableModel)table.getModel();
+        JTable table = newJFrame.getjTable1();
+        DefaultTableModel model = (DefaultTableModel) table.getModel();
+
 
         for(Major record:resultList)
         {

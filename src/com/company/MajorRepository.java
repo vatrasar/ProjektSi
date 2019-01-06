@@ -110,6 +110,11 @@ public class MajorRepository {
         return featureValue;
     }
 
+    /**
+     * change "active" for false for every major with feature set on "1"
+     * @param featureName
+     * @param featureValue
+     */
     public void disableWhereFeature(String featureName, String featureValue) {
         List<Major> majorsToDisable = getMajorsWhereFeature(featureName, featureValue);
         majorsToDisable.forEach(a->a.disableMajor(featureName));
@@ -136,6 +141,9 @@ public class MajorRepository {
         return results;
     }
 
+    /**
+     * prepare majors list for the new test
+     */
     public void restart() {
         majors=new HashSet<>();
         try {

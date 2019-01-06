@@ -99,6 +99,10 @@ public class QuestionRespository{
         }
     }
 
+    /**
+     * choose question which has impact for bigest number of active majors
+     * @return best question or null if there is no questions for active questions
+     */
     public Question getNextQuestion() {
         if(questions.isEmpty())
         {
@@ -123,6 +127,11 @@ public class QuestionRespository{
         questions.remove(bestQuestion);
         return bestQuestion;
     }
+
+    /**
+     * returns map where key is Question and value is number of majors, covering by this Question
+     * @return
+     */
     public Map<Question,Integer> getQuestionsRating()
     {
         Map<Question,Integer>questionsRating=new HashMap<>();
@@ -139,6 +148,9 @@ public class QuestionRespository{
         return questionsRating;
     }
 
+    /**
+     * prepare questions list for the new test
+     */
     public void restart() {
         questions=new ArrayList<>();
         try {
